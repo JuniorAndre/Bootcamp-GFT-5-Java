@@ -1,0 +1,56 @@
+Dominando IDEs Java
+
+- Java -
+
+- É uma linguagem de programação orientada a objetos
+- Desenvolvida na década de 90, na empresa Sun Microsystems e adquirida pela Oracle em 2008
+- Desde maio de 1995, foi adotada mais rapidamente que qualquer outra linguagem
+- Se tornou popular pelo seu uso da internet, e presente em navegadores, programas, jogos de computador,celular, calculadoras...
+- É uma linguagem interpretada
+
+
+-  Plataforma Java -
+
+- A linguagem java está dentro da plataforma java junto com outras linguagens
+- Não está presa em um sistema operacional, seus programas rodam através de uma máquina virtual
+- Dividida em:
+*Java SE
+*Java EE
+*Java ME
+
+
+- Para executar o java - 
+
+- Escreve o código-fonte com extensão .java
+- Utiliza o JDK para compilar e gerar bytecode com extensão .class
+- A JVM lê o arquivo compilado e as bibliotecas que estão no JRE
+
+
+- JDK, JVM e JRE
+
+- JDK - Java Development Kit responsável por compilar código-fonte .java
+- JVM - Java Virtual Machine responsável por executar o bytecode .class
+- JRE - Jav Runtime Environment ambiente de execução do java que fornece as bibliotecas padrão do java
+
+
+- Versões Paga e gratuita -
+
+- OpenJDK - é totalmente open source com GNU General Public License
+- JDK Oracle - requer licença comercial sob contrato de licença de código binário Oracle
+- Open LTS (suporte de longo prazo) ocorrem o lançamento das versões a cada quatro ano pelo menos
+
+
+- IDE - 
+
+- Ambiente de desenvolvimento integrado é um software que combina ferramentas comuns de desenvolvimento em uma interface gráfica do usuário (GUI)
+- O conjunto de ferramentas do java é o JDK ou Java Development Kit
+- Existem várias IDEs como Eclipse e IntelliJ
+
+
+- Eclipse e IntelliJ
+
+- Eclipse é uma IDE de desenvolvimento Java, foi feito em Java e segue o modelo open source. suporta outras linguagens
+- IntelliJ é  uma IDE escrito em java para desenvolvimento de java e outras. Possui versão paga (ultimate) e gratuita (comunity)
+
+
+
