@@ -1,2 +1,98 @@
 Variáveis, Tipos de Dados e Operadores Matemáticos em Java
 
+Variável 
+
+- Um espaço na memória do computador onde se pode guardar valores
+- Tipos de variáveis:
+*Instância: Objeto
+*Classe: classe
+*Local: dentro do método 
+*Parâmetro: na assinatura do método 
+
+Padrão de definição  - <?visibilidade?><?modificador?> tipo nome <?=valorInicial?>;
+V: "public", "protected" e "private"
+M: "static" e "final"
+T: tipo de dado
+N: nome da variável 
+VI: valor inicial, opcional
+
+
+Regras e convenções 
+
+- Não devem começar com números;
+- "$" e "_" devem ser evitados;
+- São case-sensitive;
+- Sem espaços;
+- Não pode conter uma palavra reservada de java;
+
+Boas práticas 
+
+- Sempre começar com letra minúscula;
+- Nomes expressivos;
+- Notação camelo;
+- Quando constante(final) maiúscula e separada por "_";
+
+
+
+Tipos de dados
+
+São os valores e operações que as variáveis podem assumir e sofrer, respectivamente
+- Tipificacao:
+*Estática (forte) X Dinâmica (fraco)
+*Primitivo vs Composto
+
+
+Numeral
+
+Byte: -128 até 127
+Short: -32.768 até 32.767
+Int: -2.147.483.648 até 2.147.483.647
+Long: -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807
+Float: +- 3.40282347E+38F
+Double: +- 1.79769313486231570E+308
+
+Textual 
+
+Char: caracteres de 16-bit unicode - char c = 'T'
+String: Tipo especial - String s = "T"
+
+Lógico 
+
+Boolean: true ou false
+
+
+Boas práticas 
+
+- Usar de forma adequada cada tipo de dado para cada informação
+
+
+
+Operadores aritméticos 
+
+- São símbolos especiais que são capazes de realizar ações específicas e em seguida retornar um resultado
+
+* Pós-fixado: exp++ ou exp--
+* Pré-fixado: ++exp ou --exp
+* Aritmético: +, -, *, / e %
+* Atribuição: =, +=, -=, *=, /= e %=
+
+
+
+Conversões (Casting)
+
+- São conversões entre tipos de dados, ou seja transformações entre variáveis de tipo mais específico para menos específico ou vice versa
+
+- Upcast (implícito)
+
+long l;
+int i = 10;
+l = i;
+
+- Downcast(explicito)
+
+int i; 
+float f = 10.5f;
+int = (int) f;
+
+
+
