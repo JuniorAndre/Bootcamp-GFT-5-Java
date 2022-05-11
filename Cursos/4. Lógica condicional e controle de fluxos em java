@@ -1,9 +1,90 @@
 Lógica condicional e controle de fluxos em java
 
-lógica 
+
+Operadores relacionais 
+
+- São símbolos que são capazes de realizar comparações entre determinados operandos e retornar um resultado 
+
+Similaridade: ==, !=
+Tamanho: >, >=, <, <=
+
+
+Operadores lógicos 
+
+- São símbolos especiais capazes de realizar comparações lógicas entre operandos lógicos ou expressões e retornar um resultado 
+
+Conjunção: &&
+Disjunção: ||
+Disjuncao exclusiva: ^
+Negação: !
+
+
+Boas práticas 
+
+- Crie variáveis auxiliares para guardar resultados intermediários 
+
+
+Controle de fluxo 
+
+- São estruturas com a capacidade de direcionar o fluxo de execução do código 
+
+Decisão: if, if-else, switch, operador ternário 
+Repetição: for, while, do while
+Interrupção: break, continue, return
+
+
+- Decisão -
+
+Tipos do If: 
+if, 
+if-else,
+if-else-if,
+if-else-if-else
+
+
+if(condição){
+
+}else if(condição){
+
+}else{
+
+}
+
+
+- Operador ternário -
+
+condição ? true : false;
+
+
+- Switch -
+
+switch(variável){
+  case 1:
+   break;
+  case...:
+   break;
+  default:
+   break;
+}
+
+
+Boas práticas 
+
+- Switch é para valores exatos e if para expressões booleanas
+- Evitar usar o default do switch para valores genéricos 
+- Evitar o efeito "flecha" dos if's
+- Evitar muitos if's aninhados
+- Criar variáveis intermediárias para diminuir o tamanho do if
 
 
 
+Blocos
+
+- É um grupo de 0 ou mais linhas de códigos que trabalham em conjunto para executar uma operação 
+
+Locais: dentro de métodos 
+Estáticos: dentro de classes
+Instância: dentro de classes
 
 
 
