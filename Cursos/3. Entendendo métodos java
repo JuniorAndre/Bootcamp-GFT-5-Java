@@ -3,5 +3,83 @@ Entendendo métodos java
 
 Métodos 
 
+- É uma porção de código (sub-rotina) que é disponibilizado por uma classe
+- É executado quando é feito uma requisição (chamado)
+- São responsáveis por definir e realizar um determinado comportamento
+
+
+Padrão de definição: <?visibilidade?> <?tipo?> <?modificador?> retorno nome(<?parâmetros?>) <?exceções?> corpo
+
+V: "public","protected ou "private"
+T: concreto ou abstrato
+M: "static" ou "final"
+R: tipo de dado ou "void"
+N: nome que é fornecido ao método 
+P: parâmetros que pode receber
+E: exceções que pode lançar 
+C: código que possui ou vazio
+
+São utilizados por uma mensagem através de uma classe ou objeto
+
+nome_da_classe.nome_do_metodo();
+nome_do_objeto.nome_do_metodo();
+
+Math.random(); ou Math.sqrt(4);
+usuário.getEmail();
+
+Particularidades 
+
+- Assinatura: é uma forma de identificar de forma única o método 
+Ass = nome + parâmetros 
+Exemplo: sqrt(4)
+
+- Construtor e destrutor: métodos especiais usados no OO
+- Mensagem: É o ato se solicitar ao método que execute, sejaseja direcionado a um objeto ou uma classe
+- Passagem de parâmetros: pode ser por valor ou por referência 
+*Por valor
+
+int i = 10
+public void fazer fazerAlgo (int i){
+  i = i + 10;
+  Sistem.out.println("Valor de i dentro: " + i); //20
+}
+Sistem.out.println("Valor de i fora: " + i); //10
+
+*Por referência 
+
+Feito de forma diferente, acontece o contrário 
+
+
+Boas práticas para métodos
+
+- Nomes descritivos, porém curtos
+- Notação camelo
+- Deve possuir entre 80 e 120 linhas
+- Evite lista de parâmetros longas
+- Visibilidades adequada
+
+
+
+Sobrecarga
+
+- É a capacidade de definir métodos para diferentes contextos, preservando seu nome
+
+converterParaInteiro(float f);
+converterParaInteiro(double d);
+
+
+Retorno
+
+- É uma instrução de interrupção 
+- Simbologia: return
+- Executa quando:
+  > Completa todas suas funções internas
+  > Chega a uma declaração exclicita de retorno
+  > Lança uma exceção 
+  
+- O tipo de retorno pode ser primitivos ou objeto
+- O tipo de dado do return deve ser compatível com o do método 
+- Se o método for sem return (void), pode ou não ter um return para finalizar a execução
+
 
 
