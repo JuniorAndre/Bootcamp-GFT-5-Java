@@ -7,7 +7,7 @@ public class nota{
         int nota;
 
         while(nota > 10 && nota < 0) {
-            System.out.println("Digite uma nota: ")
+            System.out.println("Digite uma nota: ");
             scan.nextInt(nota);
             System.out.println("Valor inválido! Coloque um valor de 0 a 10.");
         }

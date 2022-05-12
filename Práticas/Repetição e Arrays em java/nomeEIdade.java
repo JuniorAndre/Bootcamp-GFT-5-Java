@@ -12,7 +12,7 @@ public class nomeEIdade {
             nome = scan.next();
             if (nome.equals("0") break;)
             System.out.println("Idade: " + )
-            nome = scan.nextInt();
+            idade = scan.nextInt();
         }
 
     }
