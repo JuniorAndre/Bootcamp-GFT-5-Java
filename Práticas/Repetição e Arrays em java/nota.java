@@ -6,14 +6,13 @@ public class nota{
 
         int nota;
 
-        while(nota > 10 && nota < 0) {
-            System.out.println("Digite uma nota: ");
-            scan.nextInt(nota);
-            System.out.println("Valor inválido! Coloque um valor de 0 a 10.");
+        while(true) {
+            if(nota < 0 || nota > 10){
+                System.out.println("Digite uma nota: ");
+                scan.nextInt(nota);
+                System.out.println("Valor inválido! Coloque um valor de 0 a 10.");
+            }
         }
-
         System.out.println("Valor válido!");
-
     }
-
 }
