@@ -8,8 +8,8 @@ public class nota{
 
         while(true) {
             System.out.println("Digite uma nota: ");
-            scan.nextInt(nota);
-
+            nota = scan.nextInt();
+            
             if(nota >= 0 && nota <= 10){
                 break;
             }else{
