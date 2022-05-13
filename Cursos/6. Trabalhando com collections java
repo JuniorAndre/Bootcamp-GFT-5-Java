@@ -1,0 +1,30 @@
+Trabalhando com collections java
+
+
+Collections
+
+- É um objeto que agrupa vários elementos dentro de uma única unidade
+- Serve para armazenar e processar conjuntos de dados de forma eficiente
+- Antes do java 2, a implementação de collections incluía poucas classes e não tinha a organização de um framework 
+
+Composição de collection
+
+- Interfaces: é um contrato que quando assumido por uma classe deve ser implementado
+- Implementações ou classes: são as materializações, a codificação da interface
+- Algotirmo: sequência lógica finita e definida de instruções que devem ser seguidas para resolução de um problema 
+
+
+List
+
+- import java.util.List
+- Permite elementos duplicados e garante ordem de inserção 
+- ArrayList deve ser usado onde mais operações de pesquisa são necessárias, e LinkedList deve ser usado onde mais operações de inserção e exclusão 
+são necessárias
+- ArrayList usa um array para guardar os elementos inseridos, e a LinkedList utiliza uma estrutura chamada lista duplamente ligada 
+- A classe ArrayList implementa a interface List, e a classe LinkedList implementa  List e a Queue
+
+
+
+Set
+
+- 
