@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class arrayMultidimensional{
-    public statis void main(String[] args){
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
 
@@ -19,6 +19,7 @@ public class arrayMultidimensional{
             for(int coluna : linha){
                 System.out.println(coluna + " ");
             }
+            System.out.println(" ");
         }
     }
 }
