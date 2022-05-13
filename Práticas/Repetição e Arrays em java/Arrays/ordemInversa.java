@@ -4,16 +4,13 @@ public class ordemInversa{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        int array = [];
+        int array = {5, 7, 28, 19, 10, 5};
 
-        System.out.println("Digite 5 números para o array: ");
-        array[0] = scan.nextInt();
-        array[1] = scan.nextInt();
-        array[2] = scan.nextInt();
-        array[3] = scan.nextInt();
-        array[4] = scan.nextInt();
+        System.out.println("Vetor: ");
 
 
-        System.out.println("O inverso do array é: " + array[]);
+        for(int i = array.length - 1; i >= 0; i--){
+            System.out.println(array[i]);
+        }
     }
 }
