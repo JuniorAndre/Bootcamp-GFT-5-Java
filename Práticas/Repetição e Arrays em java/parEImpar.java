@@ -23,7 +23,7 @@ public class parEImpar{
             count++;
         }while(count < n);
 
-        System.out.println("São " + par + " pares e " + impar + "ímpares");
+        System.out.println("São " + par + " números pares e " + impar + " números ímpares");
     }
 }
 
