@@ -22,8 +22,11 @@ public class consoantes{
         }
 
         for ( String consoante : consoantes){
-            System.out.println(consoante + " ");
-        
+            if(consoante != null){
+                System.out.println(consoante + " ");
+            }
         }
+
+        System.out.println("Quantidade de consoantes: " + qtdConsoantes);
     }
 }
