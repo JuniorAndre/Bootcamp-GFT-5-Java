@@ -4,7 +4,7 @@ public class ordemInversa{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        int array = {5, 7, 28, 19, 10, 5};
+        int[] array = {5, 7, 28, 19, 10, 5};
 
         System.out.println("Vetor: ");
 
