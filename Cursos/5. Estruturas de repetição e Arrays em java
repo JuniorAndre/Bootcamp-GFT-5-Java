@@ -1,0 +1,52 @@
+ Estruturas de repetição e Arrays em java
+ 
+ 
+ Estruturas de repetição 
+ 
+- Cada repetição de código é chamada de laço ou Loop, que permite que esses comandos sejam executados repetidamente até certas condições serem
+ satisfeitas 
+- Classificadas em While, do-while, for.
+- O comando break é utilizado para interromper a execução do Loop
+- O comando continue faz com que o restante do comando seja ignorado e testa novamente ou não
+
+
+While - Repetição com teste no início 
+
+while(condição){
+
+}
+
+
+Do-while - Repetição com teste no final
+
+do{
+
+}while(condição);
+
+
+For - Repetição contada
+
+for(int i = 0; i < variável; i++){
+
+}
+
+
+
+Arrays
+
+- É um objeto utilizado para armazenar sequencialmente dados do mesmo tipo 
+- Permanecem com o mesmo tamanho depois de criados
+- Pode ser Unidimencional ou Multidimencional 
+
+Array
+
+int[] array = new int[4];
+
+
+Matriz
+
+int[][] matriz = new int[3][5];
+
+
+
+
