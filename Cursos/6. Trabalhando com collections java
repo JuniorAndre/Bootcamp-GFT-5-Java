@@ -23,6 +23,58 @@ são necessárias
 - ArrayList usa um array para guardar os elementos inseridos, e a LinkedList utiliza uma estrutura chamada lista duplamente ligada 
 - A classe ArrayList implementa a interface List, e a classe LinkedList implementa  List e a Queue
 
+List<Double> notas = new ArrayList<Double>();
+
+notas.add(7.0);   //0
+notas.add(8.5);   //1
+notas.add(9.3);   //2
+notas.add(5.0);   //3
+
+notas.indexOf(5.0);   //3
+
+notas.add(3, 8.0);   //{7.0 , 8.5 , 9,3 , 8.0 , 5,0}
+
+notas.set(notas.indexOf(5.0), 6.0);   //{7.0 , 8.5 , 9,3 , 8.0 , 6,0}
+
+notas.contains(5.0);   //false
+
+Imprimir ArrayList:
+for(Double nota : notas) System.out.println(nota);
+
+notas.get(2);   //9.3
+
+Collections.min(notas);   //6.0
+
+Collections.max(notas);   //9.3
+
+Para somar os valores:
+Iterator<Double> iterator = notas.iterator();
+Double soma = 0d;
+while(iterator.hasNext()){
+  Double next = iterator.next();
+  soma += next;
+}
+System.out.println("Exiba a soma dos valores: " + soma);
+
+notas.size();   //5
+
+notas.remove(8.5);   //{7.0 , 9,3 , 8.0 , 6,0}
+
+notas.remove(1);   //{7.0 , 8.0 , 6,0}
+
+Remover as notas menores que 7.0:
+Interator<Double> interator1 = notas.iterator();
+while(interator1.hasNext()){
+  Double next = interator1.next();
+  if(next < 7.0) interator1.remove();
+}
+System.out.println(notas);   //{7.0 , 8.0}
+
+notas.clear();   //{}
+
+notas.isEmpty();   //true
+
+
 
 
 Set
