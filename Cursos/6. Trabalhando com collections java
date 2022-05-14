@@ -84,7 +84,16 @@ Collections.sort(nomes);
 
 Set
 
-- 
+- java.util.set
+- Não permite elementos duplicados
+- Não possui índice 
+- HashSet utiliza a implementação HashMap para poder armazenar os elementos, a LinkedHashSet utiliza a LinkedHashMap, e o TreeSet utiliza o TreeMap
+- HashSet não mantém a ordem dos elementos, LinkedHashSet mantém a ordem de inserção, e o TreeSet mantém a ordem natural dos elementos 
+- HashSet tem uma melhor performance, e o TreeSet tem a pior performance entre os 3
+- O HashSet é o LinkedHashSet permitem no máximo um elemento null, enquanto que no TreeSet não é permitido nenhum
+
+
+
 
 
 
