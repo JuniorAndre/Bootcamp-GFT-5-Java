@@ -23,6 +23,9 @@ são necessárias
 - ArrayList usa um array para guardar os elementos inseridos, e a LinkedList utiliza uma estrutura chamada lista duplamente ligada 
 - A classe ArrayList implementa a interface List, e a classe LinkedList implementa  List e a Queue
 
+
+Métodos 
+
 List<Double> notas = new ArrayList<Double>();
 
 notas.add(7.0);   //0
@@ -93,6 +96,8 @@ Set
 - O HashSet é o LinkedHashSet permitem no máximo um elemento null, enquanto que no TreeSet não é permitido nenhum
 
 
+Métodos 
+
 Set<Double> notas = new HashSet<>(Arrays.asList(7.0, 8.5, 9.3, 5.0, 7.0, 0d, 3.6));
 System.out.println(notas.toString());   //{0.0, 9.3, 7.0, 5.0, 3.6, 8.5}
 
@@ -141,9 +146,24 @@ notas.clear();   //apaga os elementos
 
 notas.isEmpty();   //true
 
+notas2.addAll(notas);
 
 
 
+Map
+
+- java.util.Map
+- Não extende da interface collections, é um objeto que permite colocar múltiplos elementos 
+- Possui elementos únicos key para cada valor value
+- O HashMap e o LinkedHashMap tem a mesma performance, porém o TreeMap demora mais
+- Assim como no Set, a ordem de iteração no HashMap é randômica, do LinkedHashMap é por ordem de inserção e do TreeMap é por ordem natural
+- O HashMap e o LinkedHashMap aceitam chaves nulas, já o TreeMap não permite
+- Não são sincronizaveis  mas pode-se usar "Collections.synchronizedMap()" para sincronizar
+- Na estrutura de dados o HashMap utiliza o list of buckets, o LinkedHashSet utiliza Doubly Linked List of Buckets e o TreeMap utiliza Red-Black Tree
+- Equals() e hashCode() precisam ser sobreescritas 
+
+
+Métodos
 
 
 
