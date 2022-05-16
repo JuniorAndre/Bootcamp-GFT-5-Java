@@ -166,6 +166,42 @@ Map
 
 Métodos
 
+Map<String, Double> carrosPopulares = new HashMap<>(){{
+  put("gol", 14.4);
+  put("uno", 15.6);
+  put("mobi", 16.1);
+  put("hb20", 14.5);
+  put("kwid", 15.6);
+}};
+System.out.println(carrosPopulares,toString());   //{gol=14.4, kwid=15.6, uno=15.6, hb20=14.5, mobi=16.1}
+
+carrosPopulares.put(gol, 15.2);   //{gol=15.2}
+
+carrosPopulares.containsKey("tucson");   //false
+
+carrosPopulares.get("uno");   //15.6
+
+carrosPopulares.ketSet();   //retorna um Set
+
+carrosPopulares.values();   //retorna uma collection
+
+Collections.max(carrosPopulares.values());   //16.1
+
+Set<Map.Entry<String, Double>> entries = carrosPopulares.entrySet();   //trabalha com chave e valor de forma separada
+String modeloMaisEficiente = "";
+for(Map.Entry<String, Double> entry: entries){
+  if(entry.get.value().equals(consumoMaisEficiente)){
+    modeloMaisEficiente = entry.getKey();
+    System.out.println("Modelo mais eficiente: " + modeloMaisEficiente  + " - " + consumoMaisEficiente);    //mobi - 16.1
+  }
+}
+
+
+
+    
+    
+
+
 
 
 
