@@ -1,0 +1,18 @@
+ Tratamento de exceções em java
+ 
+ 
+ Exceção 
+ 
+ - é um evento que interrompe o fluxo normal do processamento de uma classe
+ - o uso correto de exceções torna o programa mais confiável 
+ - um programa pode continuar executando depois de lidar com um problema com o tratamento de exceções 
+ - incorpore sua estratégia de tratamento de exceções no sistema desde o princípio de processo do projeto
+ - Pode ser difícil incluir um tratamento de exceções eficiente depois que um sistema foi implementado 
+ 
+ - Error: 
+ 
+ - Unchecked(Runtime)
+ 
+ - Checked exception
+ 
+ 
