@@ -1,3 +1,256 @@
 Programação orientada a objetos
 
 
+Porque programar orientado a objeto?
+
+PE vs POO
+
+- Paradigmas estruturado tem uma representação mais simplista
+- Paradigma estruturado foca em operações(funções) e dados
+- Paradigma estruturado foca mais no "como fazer"
+
+- Paradigma orientado a objeto tem uma representação mais realista 
+- Paradigma orientado a objeto foca na modelagem de entidades e nas interações entre elas
+- Paradigma orientado a objeto foca mais no "o que fazer"
+
+Vantagens da POO
+
+- Melhor coesão 
+- Melhor acoplamento
+- Diminuição do Gap semântico
+- Coletor de lixo (liberação de memória)
+
+
+
+Fundamentos da OO
+
+Orientação a objetos
+
+- É um Paradigma de análise, projeto e programação de sistemas de software baseado na composição e interação 
+entre diversas unidades de software chamadas de objetos
+
+Abstração 
+
+- Processo em que se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos
+- Reuso: Capacidade de criar novas unidades de código a partir de outras já existentes 
+
+Encapsulamento
+
+- Capacidade de esconder complexidades e proteger dados
+
+
+
+Conceitos básicos 
+
+Classe
+
+- É uma estrutura que abstrai um conjunto de objetos com características similares
+- Uma classe define o comportamento de seus objetos através de métodos e os estados possíveis destes objetos através de atributos
+- Ou seja, uma classe descreve os serviços providos por seus objetos e quais informações eles podem armazenar 
+
+Atributos 
+
+- É o elemento de uma classe responsável por definir sua estrutura de dados
+- O conjunto destes será responsável por representar suas características e fará parte dos objetos criados a partir da classe 
+- Atributo -> classe
+- Variável-> método 
+- Tipo de dado adequado
+
+Método 
+
+- É uma porção de código (sub-rotina) que é disponibilizada pela classe
+- É executado quando é feito uma requisição a ele
+- Um método serve para identificar quais serviços ou ações que a classe oferece 
+- São responsáveis por definir e realizar um determinado comportamento 
+- Existem dois métodos especiais chamados:
+
+> Construtor
+
+- Cria objetos
+
+Carro(){
+   ...
+}
+
+> Destrutor
+
+- ajuda a destruir o objeto
+
+void finalize(){
+   ...
+}
+
+Sobrecarga de um método 
+
+- Mudar a assinatura de acordo com a necessidade 
+- Assinatura: nome + parâmetros 
+
+m1();
+m1(int i);
+m1(float f);
+
+Objeto
+
+- É a representação de um conceito do mundo real, que pode ser física ou conceitual, e possui um significado bem definido para
+um determinado software
+- Para esse conceito deve ser definido inicialmente uma classe a partir da qual serão instanciados objetos distintos
+
+- Classe objeto = new Classe();
+Carro carro = new Carro();
+
+Mensagem
+
+- É o processo de ativação de um método de um objeto
+- Acontece quando uma requisição a esse método é realizada, disparando a execução de seu comportamento descrito por sua classe
+- Pode também ser direcionado diretamente à classe,  caso a requisição seja a um método estático 
+
+- objeto
+carro.<método>;
+
+- classe
+Carro.<método>;
+
+
+
+Conceitos de relacionamento 
+
+Herança 
+
+- É o relacionamento entre classes em que uma classe chamada de subclasse é uma extensão ou subtipo de outra classe chamada superclasse
+- A subclasse consegue reaproveitar os atributos e métodos dela, além dos que venham a ser herdados
+- Pode definir seus próprios membros(atributos e métodos)
+
+class A extends B {
+   ...
+}
+
+
+Upcast
+
+- Subir para a classe mais genérica na hierarquia
+
+Veiculo veiculo = new Carro(); 
+
+Downcast
+
+- Descer para as classes mais específicas na hierarquia 
+
+Carro veículo = (Carro)new Veiculo();
+
+
+Polimorfismo 
+
+- A mesma ação, se comportando diferente 
+- Exemplo: Pagamento pode ser processado de várias formas diferentes como: boleto, pix, débito, crédito...
+
+Sobreescrita
+
+- A mesma ação, podendo se comportar diferente
+- Uma conta pode ser de vários tipos: universitária, poupança.. Porém o método de exibir saldo é sobreescrito pata conta poupança, pois
+o valor tem um acréscimo 
+
+
+
+Associação 
+
+- Possibilita um relacionamento entre classes/objetos em que estes possam pedir ajuda a outras classes/objetos e representar de forma completa
+o conceito ao qual se destinam
+- Na associação, as classes e os objetos interagem entre si para atingir seus objetivos 
+
+Tipos
+
+- Estrutural
+    > Composição 
+    > Agregação 
+- Comportamental 
+    > Dependência 
+    
+    
+Composição 
+
+- "Com parte todo"
+- Exemplo: Um endereço que só pertence a uma pessoa, estão associados
+- Se a pessoa deixa de existir, o endereço tbm deixa, pois depende do todo 
+
+Class Pessoa{
+   Endereco endereco;
+}
+
+
+Agregação 
+
+- "Sem parte todo"
+- Exemplo: Um aluno vinculado a uma disciplina, continua existindo mesmo sem estar na disciplina
+- O aluno não depende da disciplina pra existir, pode estar vinculado a outras disciplinas 
+
+Class Disciplina {
+   Aluno aluno;
+}
+
+
+Comportamental (Dependência)
+
+- "Depende de"
+- Exemplo um cupom utilizado no método da classe/objeto compra
+- A classe cupom é vinculado ao método da classe compra que depende dessa classe/objeto cupom
+
+Class Compra{
+   ...
+   finalizar(Cupom cupom, ...){
+      ...
+   }
+}
+
+
+
+Interface
+
+- Define um contrato que deve ser seguido pela classe que a implementa 
+- Quando uma classe implementa, ela se compromete a realizar todos os comportamentos que a interface disponibiliza 
+
+interface A{
+   ...
+}
+
+Class B implements A{
+   ...
+}
+
+
+
+Organização 
+
+
+Pacotes (Pastas)
+
+- São uma organização física ou lógica, criada para separar classes com responsabilidades distintas 
+- Espera-se que a aplicação fique mais organizada e seja possível separar classes de finalidades e representatividades diferentes 
+
+package ...;
+
+import ...;
+
+
+Visibilidades
+
+- São modificadores de acesso que possuem a finalidade de determinar até que ponto uma classe, atributo ou método pode ser usado
+- A utilização de modificadores é fundamental o para o uso efetivo da OO
+- Algumas boas práticas e conceitos só são atingidos com o uso corretos deles
+
+Tipos
+
+- Private
+- Protected
+- Public
+
+Private
+- So dentro da classe
+
+Protected
+- Dentro da classe, mesmo pacote e subclasses
+
+Public
+- Em qualquer lugar
+
+
+
