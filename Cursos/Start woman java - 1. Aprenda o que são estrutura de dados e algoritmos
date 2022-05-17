@@ -1,4 +1,119 @@
 Aprenda o que são estrutura de dados e algoritmos
 
 
-f
+Estrutura de dados
+
+- é uma estrutura organizada de dados na memória de um computador ou em qualquer dispositivo de armazenamento, de forma que os dados possam
+ser utilizados de forma correta 
+- Usando as estruturas adequadas através de algoritmos, podemos trabalhar com uma grande quantidade de dados, como aplicações em bancos de dados 
+ou serviços de busca
+- Os algoritmos são utilizados para manipular dados nas estruturas de várias formas, como por exemplo: inserir, excluir, procurar e ordenar dados
+
+Operações básicas em estruturas de dados:
+- Inserir dedos 
+- Excluir dados
+- Localizar um elemento 
+- Percorrer todos os itens constituintes da estrutura para visualização 
+- Classificar, que se resume em colocar os itens de dados em uma determinada ordem(numérica, alfabética...)
+
+Tipos de estruturas de dados:
+- Vetores e metrizes
+- Registro
+- Lista
+- Pilha
+- Fila
+- Árvore 
+- Tabela Hash
+- Grafos
+
+
+
+Vetores e matrizes (arrays)
+
+- São estruturas de dados simples que podem auxiliar quando há muitas variáveis do mesmo tipo em um algoritmo
+- É uma estrutura de dados indexada e pode armazenar uma determinada quantidade de valores do mesmo tipo
+- Matriz é um vetor de vetores, ou seja que possui duas ou mais dimensões 
+
+
+
+Registro (dicionário)
+
+- É uma estrutura que fornece formato especializado para armazenar informações em memória 
+- O registro permite armazenar mais de um tipo de dado
+- É composto por campos que especificam cada uma das informações que o compõem 
+- Todo Registro tem um nome e seus campos podem ser acessados por meio do uso do operador ponto .
+
+ex:   livro.preco
+
+
+
+Listas
+
+- Armazena dados de um determinado tipo em uma ordem específica 
+- A diferença de listas e arrays é que as listas possuem tamanho ajustável, e array possui tamanho fixo
+- Existem listas do tipo: Ligada e Duplamente ligada
+
+Ligadas
+
+- Existem o nó onde cada um conhece o valor que está sendo armazenado em seu interior, além de conhecer o elemento posterior a ele. Por isso
+é chamada de lista ligada
+- Esse nó é como se fossevo índice do array
+
+Duplamente ligada 
+
+- Constituem uma variação das listas ligadas, a diferença é que elas são bidirecionais
+- Não dá para "andar para trás" em listas Ligadas, pois só sabem quem é o proximo. Mas, nas listas duplamente ligadas os nós sabem quem é 
+o proximo, e também quem é o elemento anterior. Permitindo a navegação reversa.
+
+
+
+Pilhas
+
+- É uma estrutura de dados que serve como uma coleção de elementos, e permite o acesso a somente um item de dados armazenado
+- O acesso é restrito e a leitura se limita a um item por vez ou removido um por vez
+- Existe os tipos LIFO(UEPS) e FIFO(PEPS)
+
+LIFO
+
+- Estrutura do tipo LIFO (Last In Fisrt Out), apresenta o seguinte critério: O primeiro elemento a ser retirado é o último que tiver sido inserido
+
+FIFO
+
+- Estrutura do tipo FIFO (First In First Out), apresenta o seguinte critério: O primeiro elemento a ser retirado é o primeiro que tiver sido inserido
+
+
+
+Filas
+
+- Admite remoção de elementos e inserção de novos sujeita à seguinte regra de operação:
+O elemento removido é o que está na estrutura há mais tempo ou seja, o primeiro objeto inserido na fila é também o primeiro a ser removido
+- Funciona de forma parecida a FIFO 
+
+
+
+Árvores 
+
+- É uma estrutura de dados que organiza seus elementos de forma hierárquica, onde existe um elemento que fica no topo da árvore, chamado raiz e
+existem os elementos subordinados a ele, que são chamados de nós ou folhas
+- Facilita a busca
+
+
+Tabelas Hash
+
+- Conhecida como tabela de espalhamento ou de dispersão, é uma estrutura especial que associa chaves de pesquisa a valores
+- É uma generalização do array, porém utiliza uma função denominada Hashing para espalhar os elementos, fazendo com que os mesmos fiquem de 
+forma não ordenada dentro do "array" que define a tabela
+- A tabela hash permite associar valores a chaves
+- Valores é a posição ou índice onde o elemento se encontra e a Chave parte da informação que compõe o elemento a ser manipulado
+- Espalhar facilita a busca na estrutura, pois a partir de uma chave podemos acessar de forma rápida uma posição do "array"
+
+
+Grafos
+
+- São estruturas que permitem programar a relação entre objetos
+- Os objetos são vértices ou "nós" do grafo
+- Os relacionamentos são arestas
+- Facilitam as buscas na 
+
+
+
