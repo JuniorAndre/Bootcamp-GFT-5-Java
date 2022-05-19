@@ -1,0 +1,139 @@
+Conhecendo os principais protocolos de comunicação da internet
+
+
+Protocolo HTTP 
+
+- HyperText Transfer Protocol
+- Definido pelos RFCs 1945 e 2116
+- Protocolo de comunicação entre cliente e servidor 
+- Browser -> implementar o cliente HTTP 
+- Servidor-> host objetos web 
+
+Arquitetura client-server 
+- stateless - responde sempre que necessário - não mantém estado do cliente
+- Cliente -> mensagens - request HTTP - objetos web
+- Servidor -> mensagens - response HTTP - Protocolo TCP - controle de fluxo 
+
+
+Versões do HTTP 
+- 1991: HTTP 0.9 - 1° webpage
+- 1996: HTTP 1.0
+- 1997: HTTP 1.1 - Mudanças na web: CORS e Keep-Alive
+- 2012: SPDY
+- 2015: HTTP 2.0
+
+
+Mensagens HTTP 
+
+Request e Response
+- Get: quando precisa pegar algum conteúdo em site - get:https://www.amazon.com.br
+- Post: Não só para buscar uma página mas também para enviar um conteúdo para o servidor- Post:https://www.amazon.com.br/cadastro
+- OK: Responde a requisição pedida
+
+
+O corpo de um Protocolo HTTP 
+- Composto por XML e JSON
+- XML: Armazenamento e transmissão 
+- JSON: Reconstrução 
+- Content-type: determina o tipo de dado 
+- O objetivo do XML é a serialização dos dados, comunicação e adição de metadados
+- O JSON é baseado no javascript e é lightweight(fácil estrutura), independente de linguagem de programação e simples
+
+Comum a XML e JSON 
+- Auto-descritivos
+- Hierárquicos
+- Independentes de linguagem de programação 
+- Vasta utilização 
+
+Diferenças entre XML e JSON 
+- XML utiliza tags, JSON utiliza o modelo Java 
+- XML é mais complexo e muito utilizado, e o JSON é simples e permite utilizar vetores
+
+Qual utilizar para serialização?
+- Aplicações leves - JSON 
+- Complexo com utilização de metadados - XML 
+
+
+Particularidades do HTTP versão 1.1
+- Comunicação de três vias: Syn, Syn Ack, Ack
+- TCP: Transmission Control Protocol - Persistente (mantém conexão ativa) ou não-persistente (encerra depois de receber)
+- Enviar request e esperar resposta e bloquear qualquer requisição até vir a resposta 
+- Browser faz até 6 requisição simultaneamente 
+- Problema com repetição de dados: cabeçalho repetitivo - over head
+
+
+Request e Response 
+
+Request
+- Estrutura: Texto em ASCII, Request line e Header line
+
+Request line: 
+- Método: get ou post (mais usados)
+   -Get (seguro), Head (seguro), Post, Put, Delete, Trace, Option (seguro), Connect, Patch
+- URL 
+- Versão do HTTP 
+
+Header line
+- Host: url
+- Connection: close (não persistente) ou Persistente 
+- User-agent: quem está realizando a requisição (browser)
+- Accept: tipos de dados que aceita receber
+- Accept-language: a linguagem adotada
+- Accept-Enconding: aceita codificação 
+- Contente-type: tipo de conteúdo recebido
+- Content-length: tamanho do conteúdo 
+
+
+Response
+-Estrutura: Status line, Header lines e Entity body
+
+Status line
+- Versão do protocolo 
+- Status code: 200 OK, 301 Móvel permanently, 400 Bad request, 404 Not found, 505 HTTP Version not supported 
+- Status da mensagem 
+
+Classificação do status code
+- Information: 100 - 199
+- Successful: 200 - 299
+- Redirection: 300 - 399
+- Client error: 400 - 499
+- Server error: 500 - 599
+
+WebDav (Web Distributed Authoring and Versioning)
+- 102: Processando
+- 207: Multi-status
+- 208: Already reported
+- 422: Unprocessable entity
+- 423: Locked
+- 424: Filed Dependency
+Permite:
+- Webpage meta: add, deletar, retrieve
+- Link pages
+- Criação com conjunto de documentos 
+- Copy e Move
+- Lock: documento editado - 1
+
+Client usando WebDav
+- Lock
+- Propfind 
+- Get
+- Put
+- Unlock
+
+Header lines (response)
+- Conexão encerrada
+- Dados da mensagem 
+   - Data, servidor, ...
+- Content-type
+   - Tipo de dado
+
+Campos 
+- Entity header
+- Entity body
+
+
+
+
+
+
+
