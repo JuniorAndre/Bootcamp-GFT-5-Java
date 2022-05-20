@@ -132,8 +132,21 @@ Campos
 - Entity body
 
 
+Cookies e Cache
 
+Cookie
+- Pequenos pedaços ou blocos de dados criados e utilizados pelo servidor para persistir dados no dispositivo do cliente
+- Rastrear informações do cliente 
+- Estão dentro do header file
+- Cookies de sessão: Quando a sessão se encerra os cookies são deletados da memória
+- Cookies persistentes: São mantidos por meses ou até anos  dentro do dispositivo 
 
+Cashing
+- Proxy server que serve como intermediário que guarda e manda requisições para evitar over head 
+- Proxy server atualiza checando se chegou novas requisições no HTTP server
+- Há uma redução do tempo de resposta e redução do tráfego 
 
+HTTP 2.0 Atualizações do protocolo 
+- 
 
 
