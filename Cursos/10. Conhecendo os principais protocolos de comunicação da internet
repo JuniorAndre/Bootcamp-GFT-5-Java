@@ -147,7 +147,62 @@ Cashing
 - Há uma redução do tempo de resposta e redução do tráfego 
 
 HTTP 2.0 Atualizações do protocolo 
-- Priorização de recursos
+- Multiplexação: Faz várias requisições 
+- Priorização de recursos/requisições 
+- Segmentação/Streaming: Streaming ID Header separado do Streaming ID Data
+- Reutilização do header
+- Push: envia tudo o que precisa sem requisição direta do cliente, porém não é habilitado por padrão/default e configurado para o cliente 
+- Características:
+  > Única conexão persistente 
+  > Compressão de header
+  > Server push
+  > HTTPS por padrão - TLS
+  > Negociação no handshake (para o cliente)
+- Contras
+  > push: configuração incorreta
+  > Mix 1.1 e 2.0: Lentidão e Load Balancer apenas para o 1.1
+  
+  
+Servidores/ Sistemas de aplicação 
+
+APACHE - Servidor
+- Datado de 1995
+- Contribuição com WWW
+- Open source e free
+- Comunidade: APACHE Software Foundation
+- Modular, dinâmico e carregável 
+- Multiple Request Processing Modes (MPMs)
+- Altamente escalável  (+ 10000 conexões simultâneas - fácil)
+- Lida com arquivos estáticos, index, auto-indexing e negociação de conteúdo 
+- TSL/SSL via OpenSSL ou WolfSSL
+- Servidores virtuais com endereços baseados em IP ou nome
+- Compatibilidade com IPv6
+- Suporte à versão 2.0 do HTTP 
+- Proxy reverso, Websocket...
+
+XAMPP - Pacote/Ambiente
+- Utiliza APACHE server
+- Vem configurado com APACHE server, MariaDB, interpretadores script para PHP e Perl 
+- Diversos módulos: Openssl, phpMyAdmin, MediaWki, Joomla, WordPress...
+- Voltado para teste e desenvolvimento, sem acesso a Internet com uma série de parâmetros de segurança desabilitados
+
+NGINX - Servidor
+- WebServer 2004
+- Proxy reverso 
+- Load Balancer 
+- Mail Proxy 
+- HTTP Cache
+- +10 mil conexões simultâneas 
+- Lida com arquivos estáticos, index, auto-indexing
+- TLS/SSL com SNI via OpenSSL 
+- Suporte à HTTP 2.0 
+- Compatível com IPv6
+- FastCGI SCGI, uWCGI com cache
+- Suporte à gRPC (v. 1.13.10)
+- Servidores virtuais baseados em IP e nome
+- WebSocket desde 1.3.13
+- URL rewriting and redirection[35][36]
+
 
 
 
