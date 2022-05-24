@@ -204,7 +204,57 @@ NGINX - Servidor
 - URL rewriting and redirection[35][36]
 
 
+Segurança da informação 
 
+Criptografia por chave
+- Arquivo criptografado por chave, mapeado para ficar ilegível, só fica legível por chave
+- Dois tipos: Assimétrica e simétrica 
+- Assimétrica
+   > Chave privada: Assinatura - criptografia
+   > Chave pública: Verificação de autenticidade
+- Simétrica
+   > Chave única privada: Conhecimento prévio da chave
+   > Tipos: cifra de fluxo e cifra de bloco
+- Cifra de fluxo: Sequência de bits pseudo-aleatório com mapeamento de 1 para 1, tornando dados cifrados
+- Cifra de bloco: Blocos de bits permutados com mapeamento de 1 para 1, mascarando a informação 
+
+Certificado digital
+- Certificação de chave pública 
+- É através do certificado que uma entidade certificadora pode comprovar
+- O papel da entidade é verificar a identidade e a emissão de certificados
+- Possui padrões:
+   > IETF - recomendação ITUX.509
+   > RFC 1422
+
+
+Protocolo SSL(Secure Socket Layer)
+- Segurança para conexões TCP 
+- Confidencialidade
+- Integridade
+- Autenticidade end-point
+- TLS é a terceira versão do SSL
+- Sopode ser lido por quem tem a chave
+
+Operações do SSL
+- 3 fases: Handshake, Key Derivation e Data Transfer
+
+Handshake
+- Estabelece a conexão TCP: TCP start, TCP response, TCP confirmation
+- Verificação de autenticidade: SSL Hello, Certificação
+- Envio da Master Secret Key: EMS = KB + MS
+
+Key Derivation
+- Master Secret Key
+- Session encryption key
+- Verificação da chave MS
+
+Data Transfer
+- Transferência efetiva dos dados
+- Record+Mac: Verificação de integridade de mensagem 
+- Data Stream = Record + Mac -> Sendo acessado pela chave da sessão 
+
+HTTPS
+- 
 
 
 
