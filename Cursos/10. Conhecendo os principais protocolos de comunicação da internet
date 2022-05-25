@@ -254,9 +254,70 @@ Data Transfer
 - Data Stream = Record + Mac -> Sendo acessado pela chave da sessão 
 
 HTTPS
-- 
+- HTTP + SSL - Segurança na comunicação - Over TCP 
+- Verificação da autenticidade por certificados digitais por porta 443
+- Maioria dos sites utilizam a versão segura
+- Proteção contra fishing
+- Privacidade 
+
+LGPD
+- Lei Geral de Proteção de Dados
+- Promulgada em 2018
+- Entrou em vigor em agosto de 2020
+- Lei de segurança da informação 
+- N° 13.709/2018
+- Baseado na legislação europeia - GDPR
+- Baseado também na legislação do estado da Califórnia - EUA
+- A lei protege:
+   > Dados de identificação dos usuários 
+   > Dados sensíveis: religião,  etnia
+- Define o tratamento dos dados em diversos tipos de operação 
+- Livre consentimento 
+- Direito do titular das informações 
+- Sanções aos que descumprirem as regras
+- Deve seguir a lei empresas que precisam manter um BD de funcionários e usuários, garantindo sigilo nos dados
+- A ANPD (Agência Nacional de proteção de dados) zela pela proteção, elabora diretrizes, promove conhecimento, edita regulamento e realiza
+auditorias
 
 
+
+Websocket 
+- Implementa via API uma conexão no HTTP bidirecional entre o usuário e o servidor 
+- Utiliza a infraestrutura do HTTP 
+- Porta 80 e 443 pro Websocket 
+- Voltado para aplicações de tempo real com várias informações e requisições 
+- Independente do TCP 
+
+Como funciona
+- Handshake
+Handshake de duas vias: Syn, Syn Ack
+Servidor HTTP tratando conexão com as regras de um Websocket e utilização de cookies
+
+- Data Transfer 
+Transferência dos dados
+
+- O protocolo Websocket fornece comunicação cliente/servidor executando um código não confiável em um ambiente controlado para o host que escolheu 
+essa comunicação 
+- Modelo utilizado é o origin-base security
+- Apenas aceita JSON 
+- É enviado uma mensagem de fechamento para o servidor e ele envia uma confirmação 
+
+Filosofia do Websocket 
+- Origin-base security model
+- Endereçamento e protocolo
+- Camadas -> enquadramento on top TCP 
+- Encerramento do Handshake 
+
+
+
+Como funciona a comunicação na Internet 
+- Quando o cliente vai iniciar uma conexão, ele envia um pacote para o DNS para ter a informação do IP de um domínio específico 
+- Quando vai iniciar uma conexão HTTP com o domínio, primeiro inicia uma conexão com o socket via camada de transporte como TCP que há uma 
+identificação IP e porta com a conexão do HTTP 
+- Quando tem um proxy, o proxy envia para o servidor o que ele pediu se estiver em cache. se não, ele fará um update das informações com conexão 
+ao servidor e repassar para o cliente via payload 
+- Quando há várias clientes diferentes fazendo várias conexões simultâneas há o load balancer que pode fazer distribuição de carga, distribuindo para
+os servidores disponíveis, e fazendo Multiplexação de várias requisições em uma mesma conexão, enviando depois ao cliente
 
 
 
