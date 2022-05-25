@@ -233,7 +233,7 @@ Protocolo SSL(Secure Socket Layer)
 - Integridade
 - Autenticidade end-point
 - TLS é a terceira versão do SSL
-- Sopode ser lido por quem tem a chave
+- Só pode ser lido por quem tem a chave
 
 Operações do SSL
 - 3 fases: Handshake, Key Derivation e Data Transfer
