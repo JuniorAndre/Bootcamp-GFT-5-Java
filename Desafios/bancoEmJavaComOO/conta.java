@@ -36,7 +36,7 @@ public abstract class conta{
         return numero;
     }
     public double getSaldo(){
-        return saldo
+        return saldo;
     }
 
     protected void imprimirDadosComuns(){
