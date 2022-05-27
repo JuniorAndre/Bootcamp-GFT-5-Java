@@ -1,0 +1,76 @@
+Simplificando projetos java com o Spring Boot
+
+
+Spring
+- É uma plataforma com diversos recursos para construção de aplicativos java, facilitando o desenvolvimento em java EE com módulos que facilitam
+a construção de softwares reduzindo o tempo de desenvolvimento 
+- Spring Boot, Spring Framework, Spring Data, etc...
+
+Spring Framework 
+- Grupos:
+- Data Access/ Integration: funcionalidades para transações com banco de dados
+- Web: Implementações para aplicações web
+- Aop e Aspects: Para programação orientada a aspectos
+- Instrumetation: Para programação orientada a instrumentação 
+- Messaging: Provê suporta a Implementações baseadas em mensagem
+- Test: Suporte para testes unitários utilizando o JUnit e teste de integração 
+- Core Container: Classe básica a avançada, implementado o IOC (Inversão de controle) e injeção de dependência 
+
+
+Beans
+- Um bean é um objeto que é instanciado, montado e gerenciado por um container do Spring através de inversão de controle e injeção de dependências
+- Ciclo de vida de um bean:
+  > Container é iniciado
+  > Bean é instanciado
+  > Dependências são injetadas
+  > Chamada do método de inicialização 
+  > Bean é utilizado
+  > Bean é descartado
+- É possível configurar um bean de duas formas:
+  > Por aquivos XML: seria preciso definir a tag <bean> dentro de uma tag principal <beans> passando o path da classe assim o Spring saberá 
+  quais classes gerenciar a criação de instâncias e a injeção de dependências
+  > Através de anotações 
+- Duas interfaces podem ser utilizadas:
+  > BeanFactory: fornece um mecanismo de configuração avançada capaz de gerenciar objetos de qualquer natureza 
+  > ApplicationContext: se baseia na BeanFactory e adiciona outras funcionalidades, como integração mais fácil com os recursos AOP do Spring, 
+  manipulação de recursos de mensagem, propagação de eventos e contextos específicos da camada de aplicativo, como WebApplicationContext para 
+  uso em aplicativos da web.
+
+
+Inversão de controle
+- É um processo onde se inverte o fluxo de comando de um programa
+- É uma ideia de desacoplar ou remover dependências do objeto e fornecer controle para outra camada
+- Este objeto delega a tarefa de construir dependências para um conteiner IoC
+
+
+Injeção de dependências 
+- Define quais classes serão instanciadas e onde serão injetadas quando for necessário 
+- Existem 3 formas de aplicar, por injeção de construtor, setter e interface
+- O Spring Framework aplica a IoC quando necessário também utilizando o DI
+
+
+Spring Boot
+- É uma extensão do Spring que utiliza do Spring Framework para iniciar uma aplicação de forma simples e rápida, sem se preocupar com configurações
+complexas, como o Tomcat por exemplo.
+- Componentes base do Spring Boot:
+  > Spring Boot Starter
+  > Spring Boot Auto-Configuration
+  > Spring Boot Actuator
+- É como um template pré-configurado para desenvolvimento e execução de aplicações baseadas no Spring 
+- Uma arquitetura baseada no Spring Core, que traz os componentes base do Spring, como o mecanismo de DI/IoC, a Spring Expression Language(SpEL) é
+alguns módulos base do Spring AOP
+- Permite adicionar a estrutura base o que é chamado de módulo 
+- Um módulo é na verdade uma biblioteca ou ferramenta do ecossistema Spring que pode ser adicionada a uma aplicação Spring convencional
+
+
+
+
+
+
+
+
+
+
+
+
+
