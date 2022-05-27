@@ -57,20 +57,57 @@ complexas, como o Tomcat por exemplo.
   > Spring Boot Auto-Configuration
   > Spring Boot Actuator
 - É como um template pré-configurado para desenvolvimento e execução de aplicações baseadas no Spring 
-- Uma arquitetura baseada no Spring Core, que traz os componentes base do Spring, como o mecanismo de DI/IoC, a Spring Expression Language(SpEL) é
+- Uma arquitetura baseada no Spring Core, que traz os componentes base do Spring, como o mecanismo de DI/IoC, a Spring Expression Language(SpEL) e
 alguns módulos base do Spring AOP
 - Permite adicionar a estrutura base o que é chamado de módulo 
 - Um módulo é na verdade uma biblioteca ou ferramenta do ecossistema Spring que pode ser adicionada a uma aplicação Spring convencional
 
+Motivação do Spring Boot
+- Veio para facilitar a vida do desenvolvedor java e melhorar a produtividade do desenvolvimento de softwares
+- Facilita todo esse processo fazendo com que o desenvolvedor se concentre mais na parte realmente importante que envolve as regras do negócio 
+e código 
+
+Spring Initializr
+- Fornece uma API extensível para gerar projetos baseados em JVM (Java Virtual Machine) é onde podemos criar um projeto Spring Boot de forma 
+rápida e fácil através do site: https://start.spring.io/
+
+Spring Auto-Configuration 
+- Configura automaticamente a aplicação Spring com base nas dependências jar que adicionamos ao projeto 
+- Para habilitar o recurso existe a anotação @EnableAutoConfiguration mas não é usada por está contidas no @SpringBootApplication
+- @SpringBootApplication combina 3 anotações: @ComponentScan + @EnableAutoConfiguration + @Configuration
 
 
+Principais dependências e biblioteca
+
+Swagger
+- É um projeto open source com diversas ferramentas utilizadas para desenvolver APIs com a especificação OpenAPI Specification (OAS), que é 
+uma especificação para descrever, produzir, consumir e visualizar serviços de uma API REST
+- Com o OAS você poderá descrever recursos, URIs, modelo de dados, métodos HTTP aceitos e códigos de resposta
+- Fica bem mais fácil na criação, testes, consumo e documentação de APIs REST
+- É preciso usar uma dependência
+
+Feign
+- É um cliente de serviço web declarativo (cliente HTTP) desenvolvido pela Netflix e um dos mais populares do Spring Cláudio Component
+- Com ele é possível criar clientes API HTTP no java de forma mais simples para chamar/consumir os serviços REST, utilizando anotações 
+- Para usar o Feign é preciso adicionar a dependência spring-cloud-stater-openfeign no arquivo pom.xml
 
 
+Spring Boot Test
+- O Spring Boot facilita o desenvolvimento de testes de unidade e integração com o Spring Boot Test, um recurso bastante utilizado no desenvolvimento
+de aplicações Java para testar comportamentos do código e regras do negócio 
+- É preciso usar spring-boot-starter-test, que importa os módulos de teste Spring Boot, bem como JUnit Jupiter, AssertJ, Hamcrest e outras 
+bibliotecas úteis 
 
+Importância do teste
+- Em desenvolvimento de software, os erros podem aparecer em qualquer etapa do ciclo de vida do projeto. Portanto o teste de software se torna 
+essencial e não pode ser visto como opcional, pois oferece os métodos e ferramentas necessárias para garantir a qualidade de qualquer desenvolvimento
 
+Testes Unitários 
+- É a base da pirâmide de testes onde são realizados o maior número de testes ou deveria para garantir a fidelidade do código e regras de negócio 
 
-
-
+@SpringBootTest
+- É utilizada em uma classe de teste e diz ao Spring Boot para procurar uma classe de configuração principal, como @SpringBootApplication, é usá-la 
+para iniciar um contexto de aplicativo Spring
 
 
 
