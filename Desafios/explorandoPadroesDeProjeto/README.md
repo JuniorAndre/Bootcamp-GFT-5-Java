@@ -21,13 +21,13 @@
 
 <h2>Java com Spring</h2>
 
-<h3>Explorando os mesmos padrões com Spring;</h3>
+<h3>Explorando os mesmos padrões com Spring:</h3>
 
 <h3>Singleton</h3>
-- @Bean e @Autowired;
+- @Bean e @Autowired
 
 <h3>Strategy</h3>
-- @Service e @Repository;
+- @Service e @Repository
 
 <h3>Facade</h3>
 - Construir uma API REST com o mesmo objetivo desse padrão, abstrair a complexidade das seguintes integrações:
