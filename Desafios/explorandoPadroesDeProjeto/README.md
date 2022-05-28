@@ -3,6 +3,7 @@
 <h2>Explorando padrões de projetos na prática com Java</h2>
 
 <h3>São soluções consolidadas para problemas recorrentes no desenvolvimento e manutenção de software orientado a objetos. São comumente classificados nas seguintes categorias:</h3>
+
   - Padrões criacionais (singleton)
   - Padrões comportamentais (Strategy)
   - Padrões estruturais (Facade)
