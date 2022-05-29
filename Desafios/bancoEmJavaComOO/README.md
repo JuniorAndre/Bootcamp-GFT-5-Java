@@ -12,7 +12,8 @@
 - <a href="https://github.com/JuniorAndre/Bootcamp-GFT-5-Java/blob/main/Desafios/bancoEmJavaComOO/source/contaUniversitaria.java"> contaUniversitaria </a>
 
 <h3>Resultado:</h3>
-Foi criado uma lista de clientes que possuem cada conta específica e também a conta universitária que apenas permite um limite de 2000 
-em saldo. Além disso, foi ajustado os métodos para um bom funcionamento.
+Criado um banco digital conforme a aula com conta corrente e poupança, além disso foi criado uma taxa de manutenção de conta corrente e um acréscimo de juros na conta poupança, 
+ainda foi adicionado um método que lista clientes que possuem cada conta específica e também a conta universitária que apenas permite um limite de 2000 
+em saldo. Ademais, foi ajustado os métodos para um bom funcionamento.
 
 ![Screenshot_20220528-011516_Chrome](https://user-images.githubusercontent.com/65295725/170809473-d382dc38-2f16-4783-82d8-bccffc69fd13.jpg)
