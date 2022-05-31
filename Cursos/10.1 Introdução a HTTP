@@ -1,0 +1,136 @@
+Introdução a HTTP
+
+
+Protocolo HTTP (Arquitetura Client-server)
+- HyperText Transfer Protocol
+- Definido pelos RFCs 1945 e 2116
+- Protocolo de comunicação que rege a estrutura das mensagens 
+- Browser -> implementa o cliente HTTP 
+- Servidor -> host objetos web
+- Cliente -> mensagens request HTTP 
+- Servidor -> mensagens response HTTP por TCP
+- Stateless -> Não Armazena estado do Servidor
+
+Mensagens HTTP 
+- Tipos: request e response
+- Request: Texto em ASCII; Estrutura: Request line, Header line e Entity body(Utilizado pelo método Post)
+- Métodos para Header line: Get, head, post, put, delete, option, etc...
+- Método seguros: Get, head e option
+- Response: Status line, Header lines e Entity body 
+
+Cookies
+- RFC 6265
+- Rastreamento, identificação (restrição ou fornecimento de funções)
+- Componentes: Cookie header line (Response e request message), Cookie file (Mantido no cliente e servidor, Browser gerencia) e 
+Banco de dados Back-end (Website)
+
+
+Conceitos de segurança digital
+
+Criptografia por chave
+- Os dados são embaralhados e apenas com a chave o arquivo volta ao estado normal
+- Tipos: Assimétrica e Simétrica 
+- Chave Assimétrica: Chave privada (Assinatura criptografia) e chave pública (verificação de autenticidade)
+- Chave Simétrica: Chave única privada (Conhecimento prévio da chave e como transferir a chave)
+- O SSL usa a chave Simétrica por fluxo de bloco, ou seja, por bloco de bits
+- Dado um k=3, um bloco de 3 bits são permutados
+- Certificar uma chave é comprovar autenticidade 
+- Através da identidade certificadora é possível validar identidade e emitir certificados
+
+
+Protocolo SSL 
+- Secure Socket Layer 
+- Segurança para conexões TCP 
+- Confidencialidade, Integridade e Autenticidade end-point 
+- Ocorre em 3 fases: Handshake,Key Derivation e Data Transfer 
+- HTTPS é  o HTTP + SSL over TCP 
+- Porta 443
+
+
+API
+- Application Programming Interface 
+- Coleção de métodos disponibilizados por um serviço para interação indireta 
+- Na programação: rotinas e padrões, e acesso a sistema ou plataforma web
+- Normalmente para utilização dos serviços da empresa 
+- Em java: recursos disponíveis em uma API padrão Java, programas de suporte, possui partes funcionais chamadas pacotes (bibliotecas)
+
+Propriedades de uma API 
+- Acesso de dados
+- Esconder complexidade
+- Estender funcionalidades 
+- Segurança 
+
+Padrão REST (Normalmente a associado a Web)
+- Representational State Transfer - apresentada por Roy Fielding em 2000
+- HTTP: Comunicação entre API e sistema 
+- Arquitetura com boas práticas com regras bem definidas para comunicação entre sistemas 
+- Vantagens: Maior compreensão, redução do esforço, eficiência, ganho em agilidade, e migração de sistemas 
+- Independência da aplicação
+- Modelo constrains: Client-server, stateless, cache, uniform interface, layered system, e code on demand (opcional)
+
+Client-server 
+- Front (se preocupa com interface)  x Back (se preocupa com armazenamento)
+- Princípio da separação 
+- Menos complexidade 
+- Organização dos Devs
+- Portabilidade da interface do usuário (para sistemas distintos)
+- Aumento da escalabilidade 
+- Simplifica os componentes dos servidores 
+
+Stateless
+- Request: Fornecer completo entendimento para o servidor
+- Visibilidade, confiabilidade e escalabilidade 
+- Pode causar Sobrecarga Per-interaction overhead por repetição de dados
+
+Cache
+- Objetivo de aumentar eficiência da rede
+- Label requests: Cacheable or non-cacheable 
+- Reduz latência e interação 
+
+Uniform interface 
+- Diferencial: Ênfase de uma interface uniforme entre componentes 
+- Generalidade: Princípio de engenharia de software
+- Arquitetura de múltiplas restrições: Identificação de recursos, manipulação de recursos (representações: verbos HTTP), auto-descrição 
+(processamento da informação)
+- Hateoas: Hypermedia As The Engine Of Application State (métodos HTTPS)
+- Aspecto chave: Estado e elementos de dados
+
+Layered system
+- Composição hierárquica de camadas (Encapsulamento e proteção de dados)
+- Tradeoff: Latência e overhead de dados (Compensado pelo uso do cache)
+
+Code on demand
+- Funcionalidade de clientes-> Applets ou scripts
+- Simplificação: redução de features à serem pré-implementadas
+- Tradeoff: Sistema extensível x diminuição de visibilidade 
+
+Porque utilizar APIs RESTFULL
+- Padrão comumente adotado
+- Conversa bem com o protocolo HTTP 
+- Permite criação de APIs mais eficientes
+- Foco no desenvolvimento 
+
+
+API HTTP Java
+- Adicionado a versão 11 do java
+- Suporte a HTTP/1.1 e HTTP/2.0
+- Requisições: síncrona e assíncrona 
+- Pacotes HTTP utilizados: HTTPClient (classe que define o cliente HTTP), HTTPRequest (classe de solicitações e utilização de métodos), e 
+HTTPResponse (Resultado da solicitação HTTP)
+
+HTTPClient
+- .newHttpClient: cria um novo cliente HTTP e é imutável 
+- .newBuilder: Define estado e configurações do cliente (Versão do protocolo, autenticador, timeout)
+
+HTTPRequest
+- Criado a partir do builder e imutável 
+- Métodos que definem os parâmetros de configuração 
+
+HTTPResponse
+- Classe criada indiretamente 
+- Retornado como resultado do envio de uma requisição do cliente 
+- BodyHandelers.ofString(): trata os bytes da resposta HTTP 
+- Síncrona (as informações chegam em ordem e de maneira correta) ou assíncrona (as informações são enviadas fora de ordem e possuem um flag associado)
+
+
+
