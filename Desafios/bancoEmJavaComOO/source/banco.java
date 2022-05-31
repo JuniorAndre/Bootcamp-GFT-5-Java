@@ -3,7 +3,6 @@ import java.util.*;
 public class banco{
     private String nome;
     private List<conta> contas;
-    private cliente cliente;
 
     public String getNome(){
         return nome;
